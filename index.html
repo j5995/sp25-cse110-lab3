@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Minutes</title>
+    <link rel="icon" href="https://www.vrbo.com/vacation-ideas/wp-content/uploads/3gCG4RHJ41P0iImLiYHmFt/164c892eb453ad175c5fe47e8bb259df/A_beautiful_overwater_beach_hut_in_the_Maldives.jpg" />
+  </head>
+  <body>
+    <header>
+        <h1>Beach Meetup</h1>
+        <nav>
+            <ul>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#comments-questions-concerns">Comments, Questions, and Concerns</a></li>
+                <li><a href="#pictures">Pictures</a></li>
+                <li><a href="#recording">Recording</a></li>
+                <li><a href="#end-form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h2>Check-ins!</h2>
+    <h3>Today's date: April 14th</h3>
+    <details>
+        <summary>Who showed up: </summary>
+        <ul>
+            <li>Keagan</li>
+            <li>Jonathan</li>
+            <li>Jessie</li>
+            <li>Jacob</li>
+        </ul>
+    </details>
+    <details>
+        <summary>Meeting agenda</summary>
+        <ol>
+            <li>Where to go</li>
+            <li>When to go</li>
+            <li>What to do</li>
+        </ol>
+    </details>
+
+    </main>
+    <hr />
+    <footer>
+        <form id="end-form" onsubmit="alert('Thanks for your time!')">
+            <input type="text" placeholder = "Was the meeting to your liking today?" size="50"/>
+            <br />
+            <br />
+            <fieldset>
+                <legend>Please select your experience from <em>1-5</em>:</legend>
+              
+                <div>
+                  <input type="radio" id="1" value = "1" name = "exp" />
+                  <label for="1">1</label>
+                </div>
+              
+                <div>
+                    <input type="radio" id="2" value = "2" name = "exp"/>
+                    <label for="2">2</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="3" value = "3" name = "exp"/>
+                  <label for="3">3</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="4"  value = "4" name = "exp"/>
+                    <label for="4">4</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="5" value = "5" name = "exp" checked/>
+                    <label for="5">5</label>
+                </div>
+            </fieldset>        
+            <br />
+            <p>Any more comments?</p>
+            <textarea id="comments" name="comments" rows="5" cols = "33"></textarea>
+            <br />
+            <p>Today's date: </p>
+            <input type="date"/>
+            <br />
+            <p>Do you want an <strong>text</strong> or <strong>email</strong> confirmation?</p>
+            <input type="checkbox"/>
+            <label for="confirmation-choice">If so, which one?</p>
+            <input list="confirmations" id="confirmation-choice" name="confirmation-choice" />
+            <datalist id="confirmations">
+                <option value="Email"></option>
+                <option value="Text"></option>
+              </datalist>
+            <br />
+            <label for="pet-select">Which do you like more: <b>Cats</b> or Dogs?</label>
+            <br>
+            <select name="pets" id="pet-select">
+                <option value="">--Please choose an option--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="none">None</option>
+            </select>
+            <br>
+            <button><i>Submit</i></button>
+        </form>
+    </footer>
+
+  </body>
+</html>
