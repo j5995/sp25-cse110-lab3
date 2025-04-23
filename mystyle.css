@@ -1,6 +1,5 @@
 h2{
     color: rgb(200,100,50);
-    background-color: color-mix(in hsl, hsl(150deg 80% 40%), blue 80%);
     text-align: center;
 }
 h3{
@@ -35,10 +34,12 @@ button:hover{
     display: flex;
 }
 .two, .three, .four{
+    background-color: color(xyz 10 0 0);
     flex-grow: 1;
 }
 
 .three{
+    background-color: hsl(0 90% 90%);
     flex-basis: 30%;
 }
 
