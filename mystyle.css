@@ -1,6 +1,6 @@
 h2{
     color: rgb(200,100,50);
-    background-color: color-mix(in hsl, hsl(150deg 80% 40%), aquamarine 80%);
+    background-color: color-mix(in hsl, hsl(150deg 80% 40%), blue 80%);
     text-align: center;
 }
 h3{
@@ -16,10 +16,8 @@ button:hover{
     font-family:"Special Gothic Expanded One", sans-serif;
 }
 
-@property --one-color {
-    syntax: "<color>";
-    initial-value: blue;
-    inherits:false;
+:root{
+    --one-color: blue;
 }
 
 #pageTitle {
