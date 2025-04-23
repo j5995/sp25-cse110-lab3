@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <link rel="stylesheet" href="mystyle.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+        body{
+            background-color: linen;
+        }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes</title>
     <link rel="icon" href="https://www.vrbo.com/vacation-ideas/wp-content/uploads/3gCG4RHJ41P0iImLiYHmFt/164c892eb453ad175c5fe47e8bb259df/A_beautiful_overwater_beach_hut_in_the_Maldives.jpg">
   </head>
   <body>
     <header>
-        <h1>Beach Meetup</h1>
+        <h1 id="pageTitle">Beach Meetup</h1>
         <nav>
             <ul>
                 <li><a href="#attendance">Attendance</a></li>
@@ -58,30 +65,30 @@
             <input type="text" placeholder = "Was the meeting to your liking today?" size="50">
             <br>
             <br>
-            <fieldset>
+            <fieldset id="form">
                 <legend>Please select your experience from <em>1-5</em>:</legend>
               
-                <div>
+                <div class="one">
                   <input type="radio" id="1" value = "1" name = "exp">
                   <label for="1">1</label>
                 </div>
               
-                <div>
+                <div class="two">
                     <input type="radio" id="2" value = "2" name = "exp">
                     <label for="2">2</label>
                 </div>
 
-                <div>
+                <div class ="three" style = "color:blue;text-align: left;">
                   <input type="radio" id="3" value = "3" name = "exp">
                   <label for="3">3</label>
                 </div>
 
-                <div>
+                <div class ="four">
                     <input type="radio" id="4"  value = "4" name = "exp">
                     <label for="4">4</label>
                 </div>
 
-                <div>
+                <div class ="five">
                     <input type="radio" id="5" value = "5" name = "exp" checked>
                     <label for="5">5</label>
                 </div>

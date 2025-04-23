@@ -1,0 +1,84 @@
+h2{
+    color: rgb(200,100,50);
+    background-color: color-mix(in hsl, hsl(150deg 80% 40%), aquamarine 80%);
+    text-align: center;
+}
+h3{
+    display: flex;
+    color: #0FF;
+    text-decoration:line-through;
+    text-align: center;
+}
+button:active{
+    box-shadow: 2px 2px 5px #fc894d;
+}
+button:hover{
+    font-family:"Special Gothic Expanded One", sans-serif;
+}
+
+@property --one-color {
+    syntax: "<color>";
+    initial-value: blue;
+    inherits:false;
+}
+
+#pageTitle {
+    position: sticky;
+    top: 20px;
+}
+
+.one {
+    flex-grow: 1;
+    --one-color: orange;
+    background-color: var(--one-color);
+}
+
+#form{
+    display: flex;
+}
+.two, .three, .four{
+    flex-grow: 1;
+}
+
+.three{
+    flex-basis: 30%;
+}
+
+.two{
+    align-self:flex-end;
+}
+
+
+.block,
+    li {
+        display:inline;
+        border: 2px solid black;
+        padding: 0.2em;
+        margin: auto;
+    }
+    ul {
+        text-align: center;
+        max-width:fit-content;
+        min-width: 20em;
+        height: 30px;
+        border-radius:10px;
+        border-width: 2mm;
+        border-style: solid;
+        border-color:purple;
+        display:block;
+        margin-top: 0.5in;
+        margin-bottom: 1vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left:5px;
+        padding-right: 5px;
+    }
+    ol {
+        width: fit-content;
+        display:block;
+        padding: 5px 5px 25px 5px;
+        margin: 0.5in 10vw 2vh 10vw;
+    }
+
