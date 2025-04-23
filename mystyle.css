@@ -34,7 +34,6 @@ button:hover{
     display: flex;
 }
 .two, .three, .four{
-    background-color: color(xyz 10 0 0);
     flex-grow: 1;
 }
 
